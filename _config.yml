@@ -1,0 +1,5 @@
+# Site settings
+title: CitiBike Station Anomaly Detection
+description: A real-time anomaly detection pipeline for CitiBike stations using Go, Python, and Airflow
+# Theme for styling
+theme: jekyll-theme-cayman  # A clean, single-page Jekyll theme

@@ -1,0 +1,141 @@
+timestamp,station_id,station_name,percent_full,state,state_10_before,flip_10,state_20_before,flip_20,state_30_before,flip_30,flip_count
+2025-05-09 17:19:37,1786697528321024934,N 5 St & Northside Piers,0.11109999999999999,empty,full,True,empty,False,full,True,3.0
+2025-05-09 17:20:07,1786697528321024934,N 5 St & Northside Piers,0.11109999999999999,empty,full,True,empty,False,full,True,3.0
+2025-05-09 17:20:37,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,empty,True,full,False,4.0
+2025-05-09 17:21:08,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,empty,True,full,False,4.0
+2025-05-09 17:21:38,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,empty,True,full,False,4.0
+2025-05-09 17:22:08,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,empty,True,full,False,4.0
+2025-05-09 17:22:39,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:23:09,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:23:39,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:24:10,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:24:40,1786697528321024934,N 5 St & Northside Piers,0.9111,full,empty,True,full,False,empty,True,4.0
+2025-05-09 17:25:10,1786697528321024934,N 5 St & Northside Piers,0.9111,full,empty,True,full,False,empty,True,4.0
+2025-05-09 17:25:41,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:26:11,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:26:41,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:27:12,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:27:42,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:28:12,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:28:43,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:29:13,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:29:43,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,empty,True,full,False,4.0
+2025-05-09 17:30:14,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,empty,True,full,False,4.0
+2025-05-09 17:30:44,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:31:14,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:31:45,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:32:15,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:32:45,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:33:16,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:33:46,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,full,False,4.0
+2025-05-09 17:34:16,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,full,False,4.0
+2025-05-09 17:34:47,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:35:17,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,empty,True,4.0
+2025-05-09 17:35:47,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:36:18,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:36:48,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:37:18,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:37:48,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,full,False,4.0
+2025-05-09 17:38:19,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,full,False,4.0
+2025-05-09 17:38:49,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,full,False,4.0
+2025-05-09 17:39:19,1786697528321024934,N 5 St & Northside Piers,0.9111,full,full,False,full,False,full,False,4.0
+2025-05-09 17:39:50,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:40:20,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:40:50,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:41:21,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:41:51,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:42:21,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:42:52,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:43:22,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:43:52,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:44:23,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:44:53,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:45:23,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:45:54,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:46:24,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:46:54,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:47:25,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:47:55,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:48:25,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:48:56,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:49:26,1786697528321024934,N 5 St & Northside Piers,0.9333,full,full,False,full,False,full,False,4.0
+2025-05-09 17:49:56,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,4.0
+2025-05-09 17:50:26,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,4.0
+2025-05-09 17:50:57,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,4.0
+2025-05-09 17:51:27,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,4.0
+2025-05-09 17:51:57,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,4.0
+2025-05-09 17:52:28,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,4.0
+2025-05-09 17:52:58,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,3.0
+2025-05-09 17:53:28,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,3.0
+2025-05-09 17:53:59,1786697528321024934,N 5 St & Northside Piers,0.9778,full,full,False,full,False,full,False,3.0
+2025-05-09 17:54:29,1786697528321024934,N 5 St & Northside Piers,0.9778,full,full,False,full,False,full,False,3.0
+2025-05-09 17:55:00,1786697528321024934,N 5 St & Northside Piers,0.9778,full,full,False,full,False,full,False,3.0
+2025-05-09 17:55:30,1786697528321024934,N 5 St & Northside Piers,0.9778,full,full,False,full,False,full,False,3.0
+2025-05-09 17:56:00,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,3.0
+2025-05-09 17:56:30,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,3.0
+2025-05-09 17:57:01,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,3.0
+2025-05-09 17:57:31,1786697528321024934,N 5 St & Northside Piers,0.9556,full,full,False,full,False,full,False,3.0
+2025-05-09 16:36:10,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,full,False,empty,True,3.0
+2025-05-09 16:36:40,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,full,False,empty,True,3.0
+2025-05-09 16:37:10,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,empty,True,3.0
+2025-05-09 16:37:41,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,empty,True,3.0
+2025-05-09 16:38:11,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,full,False,3.0
+2025-05-09 16:38:41,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,full,False,3.0
+2025-05-09 16:39:12,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,full,False,3.0
+2025-05-09 16:39:42,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,full,False,3.0
+2025-05-09 16:40:12,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,full,False,3.0
+2025-05-09 16:40:43,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,empty,True,empty,True,full,False,3.0
+2025-05-09 16:41:13,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,full,False,3.0
+2025-05-09 16:41:43,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,full,False,3.0
+2025-05-09 16:42:14,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:42:44,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:43:14,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:43:44,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:44:15,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:44:45,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:45:15,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:45:46,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,empty,True,empty,True,3.0
+2025-05-09 16:46:16,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:46:46,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:47:17,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:47:47,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:48:17,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:48:48,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:49:18,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:49:48,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:50:19,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:50:49,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,empty,True,3.0
+2025-05-09 16:51:19,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:51:50,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:52:20,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:52:50,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:53:21,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:53:51,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:54:21,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:54:51,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:55:22,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:55:52,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:56:22,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:56:53,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:57:23,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:57:53,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:58:24,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:58:54,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:59:24,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 16:59:55,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:00:25,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:00:55,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:01:26,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:01:56,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:02:26,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:02:56,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:03:27,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:03:57,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:04:27,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:04:58,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:05:28,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:05:58,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:06:28,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:06:59,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:07:29,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
+2025-05-09 17:07:59,66dd1d0f-0aca-11e7-82f6-3863bb44ef7c,Banker St & Meserole Ave,0.8065000000000001,full,full,False,full,False,full,False,3.0
