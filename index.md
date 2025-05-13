@@ -1,3 +1,6 @@
+Here's your updated `index.md` file with the requested additions — YouTube embed section, image placeholders, and a paragraph clarifying the role of parsing and feature engineering before anomaly detection.
+
+````markdown
 ---
 layout: default
 title: Real-Time CitiBike Station Anomaly Detection
@@ -38,6 +41,18 @@ Performs essential calculations:
 * `CalculatePercentEmpty()` – calculates percentage of empty docks.
 * `CreateStationMap()` – maps station IDs to metadata for faster lookup.
 
+---
+
+## 🛠️ Data Parsing & Feature Engineering
+
+After retrieving the raw data from the CitiBike API, it must be **parsed and transformed** to extract relevant metrics. This includes calculating **percentages**, deriving **station states**, and aligning timestamps for consistent comparisons.
+
+From there, we apply **feature engineering** to build time-based trends, compute rolling statistics, and flag specific station behaviors. These features feed into our anomaly detection system to make sense of real-time fluctuations in station activity.
+
+---
+
+## 🧠 Anomaly Detection Logic
+
 ### `anomaly_detection/detect_flips.py`
 
 Detects station "flipping" anomalies based on:
@@ -46,6 +61,8 @@ Detects station "flipping" anomalies based on:
 * Rolling flip counts over time (default: 45 minutes)
 * Flip threshold (default: 3 flips in a 45-minute window)
 * Compares current state to 10, 20, and 30 rows prior to detect pattern
+
+The goal is to flag **stations behaving abnormally**, such as those repeatedly toggling between states, which could signal maintenance issues or demand shocks.
 
 **Example Output:**
 
@@ -82,9 +99,21 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 
 You’ll soon find:
 
-* Screenshots of anomaly outputs
-* Maps of station activity
-* Graphs showing flipping frequency over time
+* 📍 **Map Screenshot Placeholder** – `images/map_placeholder.png`
+* 📊 **Flipping Graph Placeholder** – `images/flipping_graph_placeholder.png`
+* 📈 **Time Series Placeholder** – `images/time_series_placeholder.png`
+
+---
+
+## 🎥 Demo Video
+
+Here’s a walk-through of the anomaly detection system in action:
+
+<div align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+</div>
+
+*Replace `YOUR_VIDEO_ID` with the actual YouTube video ID.*
 
 ---
 
@@ -107,3 +136,8 @@ The project can be run locally or deployed on a cloud instance. Output anomalies
 ---
 
 > Built for speed. Tuned for insight. Powered by real-time CitiBike data.
+
+```
+
+Let me know if you'd like help uploading the images or embedding the actual video.
+```
