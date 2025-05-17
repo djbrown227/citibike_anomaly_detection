@@ -75,7 +75,6 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 
 * **Go** – for API interaction and efficient data processing
 * **Python** – for anomaly detection using pandas
-* **Airflow** – for scheduling the ETL pipeline
 * **MySQL** – for storing station and anomaly data
 * **GitHub Pages** – for project documentation using Jekyll
 
@@ -83,10 +82,8 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 
 ## 📈 Use Cases
 
-* Detect malfunctioning docks
 * Monitor bike rebalancing operations
 * Identify unusual rider activity patterns
-* Surface real-time maintenance needs
 
 ---
 
@@ -126,14 +123,9 @@ The project can be run locally or deployed on a cloud instance. Output anomalies
 ## 👤 Author
 
 **Daniel Brown**
-📧 [your.email@example.com](mailto:your.email@example.com)
-🔗 [GitHub](https://github.com/yourgithub) | [LinkedIn](https://linkedin.com/in/yourlinkedin)
+📧 [your.email@example.com](mailto:djbrown227@gmail.com)
+🔗 [GitHub](https://github.com/djbrown227/citibike_anomaly_detection) | [LinkedIn](https://www.linkedin.com/in/daniel-brown-203288146/)
 
 ---
 
 > Built for speed. Tuned for insight. Powered by real-time CitiBike data.
-
-```
-
-Let me know if you'd like help uploading the images or embedding the actual video.
-```
