@@ -1,6 +1,3 @@
-Here's your updated `index.md` file with the requested additions — YouTube embed section, image placeholders, and a paragraph clarifying the role of parsing and feature engineering before anomaly detection.
-
-````markdown
 ---
 layout: default
 title: Real-Time CitiBike Station Anomaly Detection
@@ -113,9 +110,7 @@ You’ll soon find:
 
 Here’s a walk-through of the anomaly detection system in action:
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-
-*Replace `YOUR_VIDEO_ID` with the actual YouTube video ID.*
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ik1FlE2llmI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -125,7 +120,6 @@ The project can be run locally or deployed on a cloud instance. Output anomalies
 
 * Tableau or Power BI dashboards
 * Embedded HTML graphs or maps
-* Alerts via Airflow or messaging systems
 
 ---
 
