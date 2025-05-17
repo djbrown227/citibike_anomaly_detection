@@ -9,6 +9,15 @@ This project monitors **real-time CitiBike data** to detect anomalous behavior a
 
 ---
 
+## 🎥 Demo Video
+
+Here’s a walk-through of the anomaly detection system in action:
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ik1FlE2llmI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+---
+
+
 ## ⚙️ Core Functionality
 
 ### `internal/api/api.go`
@@ -104,14 +113,6 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 ### Anomaly Detection
 #### This map shows where an anomaly was detected. My anomaly detection algorithm observed this station flipping from full to empty, empty to full and back within a short time window.
 ![Map](assets/Screenshot 2025-05-13 at 1.15.39 PM.png)
-
----
-
-## 🎥 Demo Video
-
-Here’s a walk-through of the anomaly detection system in action:
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ik1FlE2llmI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 ---
 
