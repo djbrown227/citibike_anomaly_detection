@@ -5,7 +5,7 @@ title: Real-Time CitiBike Station Anomaly Detection
 
 # 🚲 CitiBike Station Anomaly Detection
 
-This project monitors **real-time CitiBike data** to detect anomalous behavior at docking stations. We focus on **frequent flipping between empty and full states**, which could indicate operational issues or unusual usage patterns.
+This project monitors **real-time CitiBike data** to detect anomalous behavior at docking stations. We focus on **frequent flipping between empty and full states**, which could indicate operational issues or unusual usage patterns. The state of each station(normal, empty, full) and whether that station is experiencing anomalous behavior is then stored in a database. 
 
 ---
 
