@@ -99,19 +99,21 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 
 You’ll soon find:
 
-* 📍 **Map Screenshot Placeholder** – `images/map_placeholder.png`
-* 📊 **Flipping Graph Placeholder** – `images/flipping_graph_placeholder.png`
-* 📈 **Time Series Placeholder** – `images/time_series_placeholder.png`
+### Map Screenshot Placeholder
+![Map](assets/Screenshot 2025-05-13 at 1.15.49 PM.png)
 
+### Map Screenshot Placeholder
+![Map](assets/Screenshot 2025-05-13 at 1.15.39 PM.png)
+
+### Map Screenshot Placeholder
+![Map](assets/Screenshot 2025-05-13 at 2.13.00 PM.png)
 ---
 
 ## 🎥 Demo Video
 
 Here’s a walk-through of the anomaly detection system in action:
 
-<div align="center">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-</div>
 
 *Replace `YOUR_VIDEO_ID` with the actual YouTube video ID.*
 

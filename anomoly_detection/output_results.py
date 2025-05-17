@@ -1,7 +1,5 @@
 import pandas as pd
 from detect_flips import detect_station_flipping
-from detect_flip_frequnecy import detect_unusual_flip_frequency
-from detect_flip_dist import detect_local_synchronized_flips
 
 def main():
     # Load the parsed data

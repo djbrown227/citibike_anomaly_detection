@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-def detect_station_flipping(df, full_thresh=0.6, empty_thresh=0.5, flip_window='45min', flip_threshold=3):
+def detect_station_flipping(df, full_thresh=0.8, empty_thresh=0.2, flip_window='45min', flip_threshold=3):
     """
     Detects frequent state flips between 'empty' and 'full' within a time window.
     Flags as anomaly if flip count exceeds threshold in that window.
