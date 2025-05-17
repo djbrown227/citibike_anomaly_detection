@@ -89,18 +89,22 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 
 ## 📷 Visuals
 
-*Visualizations and videos of anomaly detection results coming soon!*
+### Citibike API
+#### Data called from the Citibike API using Go
+![Map](assets/Screenshot 2025-05-13 at 2.51.30 PM.png)
 
-You’ll soon find:
+### Citibike data parsed
+#### Data that has been parsed and features like 'percent filled' and 'percent empty' added
+![Map](assets/Screenshot 2025-05-13 at 2.51.38 PM.png)
 
-### Map Screenshot Placeholder
+### Station % Filled
+#### This map shows how full each station is. The darker the blue the more it is filled
 ![Map](assets/Screenshot 2025-05-13 at 1.15.49 PM.png)
 
-### Map Screenshot Placeholder
+### Anomaly Detection
+#### This map shows where an anomaly was detected. My anomaly detection algorithm observed this station flipping from full to empty, empty to full and back within a short time window.
 ![Map](assets/Screenshot 2025-05-13 at 1.15.39 PM.png)
 
-### Map Screenshot Placeholder
-![Map](assets/Screenshot 2025-05-13 at 2.13.00 PM.png)
 ---
 
 ## 🎥 Demo Video
