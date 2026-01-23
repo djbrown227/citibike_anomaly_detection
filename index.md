@@ -1,4 +1,8 @@
-```markdown
+---
+layout: default
+title: Real-Time CitiBike Station Anomaly Detection
+---
+
 # Real-Time CitiBike Station Anomaly Detection
 
 ## Problem Statement (SCQA Framework)
@@ -60,7 +64,7 @@ timestamp,station_id,station_name,percent_full,state,flip_count
 
 ---
 
-## 🎥 Demo Video
+## Demo Video
 
 Here's a walk-through of the anomaly detection system in action:
 
@@ -68,7 +72,7 @@ Here's a walk-through of the anomaly detection system in action:
 
 ---
 
-## 📷 System Outputs
+## System Outputs
 
 ### 1. Raw CitiBike API Data
 Data called from the CitiBike API using Go—showing live station status across the network.
@@ -154,4 +158,3 @@ Stations flagged by the anomaly detection algorithm for rapid state oscillations
 ## Key Takeaway
 
 This project demonstrates how real-time data engineering, domain knowledge, and operationally-focused design solve practical problems in distributed systems. It prioritizes **usefulness over novelty**—appropriate technical complexity to address real operational needs, with interpretable outputs that directly support decision-making.
-```
