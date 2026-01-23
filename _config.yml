@@ -2,4 +2,4 @@
 title: CitiBike Station Anomaly Detection
 description: A real-time anomaly detection pipeline for CitiBike stations using Go and Python.
 # Theme for styling
-theme: jekyll-theme-cayman  # A clean, single-page Jekyll theme
+theme: minima  # A clean, single-page Jekyll theme
