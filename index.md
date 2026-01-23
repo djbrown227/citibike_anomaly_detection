@@ -1,51 +1,157 @@
----
-layout: default
-title: Real-Time CitiBike Station Anomaly Detection
----
-# Real-Time CitiBike Station Anomaly Detection: Project Brief
+```markdown
+# Real-Time CitiBike Station Anomaly Detection
 
-## Executive Summary (SCQA Framework)
+## Problem Statement (SCQA Framework)
 
-**Situation**: CitiBike operates over 1,700 docking stations across New York City, where availability directly impacts rider experience and operational efficiency. The system publicly exposes real-time station data through APIs, generating thousands of status updates hourly across the network.
+**Situation**: CitiBike operates 1,700+ docking stations across NYC, generating thousands of status updates hourly through public APIs.
 
-**Complication**: Operational problems often manifest as rapid state oscillations—stations cycling between empty and full within minutes. These patterns indicate rebalancing mismatches, capacity constraints, or demand shocks, but they're invisible in point-in-time dashboards and disappear before daily aggregates capture them. Operations teams cannot identify which stations are unstable *right now*, forcing reactive rather than proactive interventions.
+**Complication**: Operational issues manifest as rapid oscillations—stations cycling between empty and full within minutes. These patterns indicate rebalancing failures or capacity constraints, but they're invisible in static dashboards and disappear before daily reports capture them.
 
-**Question**: How can CitiBike detect stations experiencing operational instability in real time to enable faster, more targeted response?
+**Question**: How can CitiBike detect unstable stations in real time to enable faster operational response?
 
-**Answer**: Build a real-time anomaly detection pipeline that monitors live station data, classifies operational states, and flags stations exhibiting frequent empty-full transitions within configurable time windows—delivering interpretable, actionable signals for rebalancing and capacity decisions.
+**Answer**: A real-time anomaly detection pipeline that monitors live data and flags stations exhibiting frequent empty-full transitions within configurable time windows.
 
 ---
 
-## Why This Solution Works (Pyramid Principle Level 1)
+## Why This Solution Works
 
-The solution addresses three critical requirements simultaneously: detecting the right operational signals, operating at the right timescale, and maintaining interpretability for non-technical users.
+### 1. Detects Behavioral Instability, Not Just Low Availability
+Traditional monitoring shows point-in-time status. This system identifies *patterns*—a station cycling between empty and full 4 times in 45 minutes signals capacity mismatch requiring intervention, not natural demand fluctuation.
 
-### 1. Detects Operational Instability, Not Just Low Availability
+### 2. Operates in Real Time
+Station issues often emerge and resolve within 30-60 minutes. Real-time detection with rolling windows enables same-shift response rather than next-day post-mortems.
 
-**The Distinction**: Traditional monitoring reports whether stations are empty or full at a given moment. This system identifies *behavioral patterns*—stations rapidly alternating between states—that signal systemic operational issues rather than natural demand fluctuations.
-
-**Why It Matters**: A station that's empty during morning rush hour is expected behavior. A station that cycles between empty and full four times in 45 minutes indicates capacity mismatch, rebalancing inefficiency, or localized demand shocks requiring intervention.
-
-**Operational Impact**: Operations teams can prioritize stations with confirmed instability over stations with transient, self-resolving availability issues, reducing wasted rebalancing trips and focusing resources where they'll have the greatest impact.
-
-### 2. Operates in Real Time When Issues Occur
-
-**The Timing Challenge**: Station-level operational problems often emerge and resolve within 30-60 minute windows. Batch processing, hourly aggregates, and next-day reports miss these events entirely—the problem has already caused rider frustration and resolved by the time it appears in reporting.
-
-**How Real-Time Detection Solves This**: By processing live data with rolling time windows, the system identifies problematic stations as issues occur, enabling same-shift operational response rather than post-mortem analysis.
-
-**Operational Impact**: Rebalancing crews can respond to instability during the operational window when intervention is still valuable, rather than learning about problems hours or days after they've resolved.
-
-### 3. Balances Speed and Interpretability
-
-**The Trade-off**: Complex machine learning models can detect subtle patterns but create "black box" decisions that operations teams struggle to trust or explain. Simple threshold alerts are transparent but miss nuanced behavioral patterns.
-
-**How Rule-Based Detection Solves This**: The system uses parameterized, threshold-based logic. Detection criteria (flip count, time window, state definitions) are explicit and tunable. Flagged anomalies include full context—station location, current state, flip count, and timestamp.
-
-**Operational Impact**: Operations teams understand *why* a station was flagged without requiring data science expertise. Parameters can be adjusted based on local knowledge (e.g., stations near event venues may need higher thresholds). Decisions are auditable and explainable for operational review.
+### 3. Maintains Interpretability
+Rule-based detection with explicit thresholds (flip count, time window) means operations teams understand *why* stations are flagged without data science expertise. Parameters are tunable based on local knowledge.
 
 ---
 
-## How the System Works (Pyramid Principle Level 2)
+## System Architecture
 
-The architecture follows a classic real-time data pipeline: ingest live data, engineer features, detect anomalies, persist results, and expose for consumption.
+```
+Live CitiBike API → Ingestion (Go) → Feature Engineering (Go) → Anomaly Detection (Python) → Storage (MySQL) → Dashboards
+```
+
+### Data Ingestion (`internal/api/api.go`)
+- Polls CitiBike GBFS API for real-time station status
+- Parses: bikes available, docks available, operational flags, timestamps
+- Go selected for low-latency polling and concurrent processing
+
+### Feature Engineering (`internal/processing/processing.go`)
+- Transforms raw counts into operational metrics:
+  - Percent filled/empty (normalizes across different station capacities)
+  - State classification: `empty` (<10% full), `full` (>90% full), `normal`
+  - Timestamp normalization for time-series analysis
+
+### Anomaly Detection (`anomaly_detection/detect_flips.py`)
+- Tracks state transitions (`empty` ↔ `full`) within rolling windows (default: 45 min)
+- Flags stations exceeding threshold (default: 3+ flips per window)
+- Confirms patterns across multiple observations
+
+**Example Output**:
+```csv
+timestamp,station_id,station_name,percent_full,state,flip_count
+2025-05-08 16:00:00,29a41b09,41 St & 3 Ave,0.05,empty,4
+```
+
+### Storage (MySQL)
+- Persists station states and anomaly flags
+- Enables historical analysis and BI tool integration
+
+---
+
+## 🎥 Demo Video
+
+Here's a walk-through of the anomaly detection system in action:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ik1FlE2llmI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## 📷 System Outputs
+
+### 1. Raw CitiBike API Data
+Data called from the CitiBike API using Go—showing live station status across the network.
+
+![CitiBike API Data](assets/Screenshot 2025-05-13 at 2.51.30 PM.png)
+
+### 2. Feature-Enriched Data
+Parsed data with engineered features like 'percent filled' and 'percent empty' added for operational analysis.
+
+![Parsed CitiBike Data](assets/Screenshot 2025-05-13 at 2.51.38 PM.png)
+
+### 3. Station Utilization Heatmap
+Geographic visualization showing how full each station is. Darker blue indicates higher utilization—stations nearing capacity.
+
+![Station Percent Filled Map](assets/Screenshot 2025-05-13 at 1.15.49 PM.png)
+
+### 4. Detected Anomalies
+Stations flagged by the anomaly detection algorithm for rapid state oscillations (full → empty → full) within short time windows, indicating operational instability requiring intervention.
+
+![Anomaly Detection Map](assets/Screenshot 2025-05-13 at 1.15.39 PM.png)
+
+---
+
+## Key Technical Decisions
+
+**Rule-Based vs. ML**: Chose rule-based detection for interpretability and operational trust. Operations teams can explain flags during reviews and tune parameters without retraining models.
+
+**45-Minute Windows**: Balances signal strength (distinguishes patterns from noise) with operational responsiveness (enables same-shift response).
+
+**Go + Python**: Go for performance-critical ingestion, Python for flexible time-series analysis. Clear separation of concerns.
+
+---
+
+## Operational Impact
+
+**Faster Response**
+- Before: Issues appear in next-day reports (12-24 hours later)
+- After: Detection within 1-5 minutes
+- Impact: Intervention during window when it's still valuable
+
+**Targeted Interventions**
+- Before: Crews dispatched based on point-in-time snapshots
+- After: Crews directed to confirmed behavioral instability
+- Impact: Fewer wasted trips, higher success rates
+
+**Proactive Capacity Planning**
+- Identify stations with recurring patterns as candidates for dock expansion
+- Data-driven evidence for capital investments
+
+**BI Integration**
+- Clean integration with Tableau, Power BI, custom dashboards
+- Automated alerting via SMS/email for operational workflows
+
+---
+
+## Technology Stack
+
+- **Go**: Real-time API ingestion and processing
+- **Python (pandas)**: Time-series feature engineering and anomaly detection
+- **MySQL**: Persistent storage with time-series indexing
+- **Jekyll**: Version-controlled project documentation
+
+---
+
+## Future Enhancements
+
+- **Predictive Models**: Forecast instability based on time-of-day, weather, events
+- **Automated Alerts**: Push notifications to rebalancing crews
+- **Severity Scoring**: Weight by station importance and historical reliability
+- **Multi-City Deployment**: Extend to other GBFS-compliant bike-share systems
+
+---
+
+## Project Resources
+
+**GitHub**: [github.com/djbrown227/citibike_anomaly_detection](https://github.com/djbrown227/citibike_anomaly_detection)  
+**Author**: Daniel Brown  
+**Email**: djbrown227@gmail.com  
+**LinkedIn**: [linkedin.com/in/daniel-brown-203288146](https://www.linkedin.com/in/daniel-brown-203288146/)
+
+---
+
+## Key Takeaway
+
+This project demonstrates how real-time data engineering, domain knowledge, and operationally-focused design solve practical problems in distributed systems. It prioritizes **usefulness over novelty**—appropriate technical complexity to address real operational needs, with interpretable outputs that directly support decision-making.
+```
