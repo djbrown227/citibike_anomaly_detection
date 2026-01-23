@@ -3,9 +3,10 @@ layout: default
 title: Real-Time CitiBike Station Anomaly Detection
 ---
 
-# Real-Time CitiBike Station Anomaly Detection
+# Real-Time CitiBike Station Anomaly Detection  
+**Detecting operational instability and unusual activity in CitiBike stations**  
+*Inspired by the “station flipping” exploits reported in [The New York Times](https://www.nytimes.com/2024/09/19/nyregion/citi-bike-scam-nyc.html)*
 
-## Problem Statement (SCQA Framework)
 
 **Situation**: CitiBike operates 1,700+ docking stations across NYC, generating thousands of status updates hourly through public APIs.
 
